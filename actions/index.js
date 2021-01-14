@@ -1,13 +1,13 @@
-export default RECEIV_ENTRY = "RECEIV_ENTRY";
-export default ADD_ENTRY = "ADD_ENTRY";
+export const  RECEIV_ENTRY = "RECEIV_ENTRY";
+export const  ADD_ENTRY = "ADD_ENTRY";
 
-export default function receiveEntry(entries){
+export  function receiveEntry(entries){
 return {
     type:RECEIV_ENTRY,
     entries
 }
 }
-export default function addEntry(entry){
+export  function addEntry(entry){
 return {
     type:ADD_ENTRY,
     entry

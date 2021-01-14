@@ -50,7 +50,15 @@ function setMissingDates (dates) {
 }
 
 export function formatCalendarResults (results) {
-  return results === null
-    ? setDummyData()
+  return results ===  new Array()
+    ? setDummyData([{ run: getRandomNumber(run.max),
+
+      bike: getRandomNumber(bike.max),
+      
+      swim: getRandomNumber(swim.max),
+      
+      sleep: getRandomNumber(sleep.max),
+      
+      eat: getRandomNumber(eat.max), }])
     : setMissingDates(JSON.parse(results))
 }
