@@ -54,7 +54,7 @@ class AddEntry extends Component {
 
   submit = () => {
     const key = timeToString();
-    const entry = [this.state];
+    const entry = this.state;
     alert([key])
     alert(entry)
     // Update Redux
@@ -73,7 +73,6 @@ class AddEntry extends Component {
   reset = () => {
     
     const key = timeToString();
-
     // Update Redux
     this.props.dispatch(addEntry({
       [key]: getDailyReminderValue()

@@ -14,12 +14,12 @@ export default function App(){
     return (
       <Provider store={createStore(reducer)}>
       <View style={styles.container}>
-        <View style={{height: 20}}>
+        
         {/* <AddEntry /> */}
         <Historty/>
         {/* <Image source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeLfNpes0FQpqZIx4vBmrzLUYj6wNaiN5oTg&usqp=CAU'}} style={styles.image}/>
         <SwitchInput/> */}
-        </View>
+       
       </View>
       </Provider>
     );

@@ -37,6 +37,7 @@ class History extends Component {
       }
     render() {
         const {entries} =  this.props
+        alert(entries)
         return (
            
                 <UdaciFitnessCalendar
